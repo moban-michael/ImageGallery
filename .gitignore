@@ -88,3 +88,399 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+ImageGallery/Pods/Alamofire/LICENSE
+ImageGallery/Pods/Alamofire/README.md
+ImageGallery/Pods/Alamofire/Source/AFError.swift
+ImageGallery/Pods/Alamofire/Source/Alamofire.swift
+ImageGallery/Pods/Alamofire/Source/AlamofireExtended.swift
+ImageGallery/Pods/Alamofire/Source/AuthenticationInterceptor.swift
+ImageGallery/Pods/Alamofire/Source/CachedResponseHandler.swift
+ImageGallery/Pods/Alamofire/Source/Combine.swift
+ImageGallery/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+ImageGallery/Pods/Alamofire/Source/EventMonitor.swift
+ImageGallery/Pods/Alamofire/Source/HTTPHeaders.swift
+ImageGallery/Pods/Alamofire/Source/HTTPMethod.swift
+ImageGallery/Pods/Alamofire/Source/MultipartFormData.swift
+ImageGallery/Pods/Alamofire/Source/MultipartUpload.swift
+ImageGallery/Pods/Alamofire/Source/NetworkReachabilityManager.swift
+ImageGallery/Pods/Alamofire/Source/Notifications.swift
+ImageGallery/Pods/Alamofire/Source/OperationQueue+Alamofire.swift
+ImageGallery/Pods/Alamofire/Source/ParameterEncoder.swift
+ImageGallery/Pods/Alamofire/Source/ParameterEncoding.swift
+ImageGallery/Pods/Alamofire/Source/Protected.swift
+ImageGallery/Pods/Alamofire/Source/RedirectHandler.swift
+ImageGallery/Pods/Alamofire/Source/Request.swift
+ImageGallery/Pods/Alamofire/Source/RequestInterceptor.swift
+ImageGallery/Pods/Alamofire/Source/RequestTaskMap.swift
+ImageGallery/Pods/Alamofire/Source/Response.swift
+ImageGallery/Pods/Alamofire/Source/ResponseSerialization.swift
+ImageGallery/Pods/Alamofire/Source/Result+Alamofire.swift
+ImageGallery/Pods/Alamofire/Source/RetryPolicy.swift
+ImageGallery/Pods/Alamofire/Source/ServerTrustEvaluation.swift
+ImageGallery/Pods/Alamofire/Source/Session.swift
+ImageGallery/Pods/Alamofire/Source/SessionDelegate.swift
+ImageGallery/Pods/Alamofire/Source/StringEncoding+Alamofire.swift
+ImageGallery/Pods/Alamofire/Source/URLConvertible+URLRequestConvertible.swift
+ImageGallery/Pods/Alamofire/Source/URLEncodedFormEncoder.swift
+ImageGallery/Pods/Alamofire/Source/URLRequest+Alamofire.swift
+ImageGallery/Pods/Alamofire/Source/URLSessionConfiguration+Alamofire.swift
+ImageGallery/Pods/Alamofire/Source/Validation.swift
+ImageGallery/Pods/Manifest.lock
+ImageGallery/Pods/MBProgressHUD/LICENSE
+ImageGallery/Pods/MBProgressHUD/MBProgressHUD.h
+ImageGallery/Pods/MBProgressHUD/MBProgressHUD.m
+ImageGallery/Pods/MBProgressHUD/README.mdown
+ImageGallery/Pods/Pods.xcodeproj/project.pbxproj
+ImageGallery/Pods/RxCocoa/LICENSE.md
+ImageGallery/Pods/RxCocoa/Platform/DataStructures/Bag.swift
+ImageGallery/Pods/RxCocoa/Platform/DataStructures/InfiniteSequence.swift
+ImageGallery/Pods/RxCocoa/Platform/DataStructures/PriorityQueue.swift
+ImageGallery/Pods/RxCocoa/Platform/DataStructures/Queue.swift
+ImageGallery/Pods/RxCocoa/Platform/DispatchQueue+Extensions.swift
+ImageGallery/Pods/RxCocoa/Platform/Platform.Darwin.swift
+ImageGallery/Pods/RxCocoa/Platform/Platform.Linux.swift
+ImageGallery/Pods/RxCocoa/Platform/RecursiveLock.swift
+ImageGallery/Pods/RxCocoa/README.md
+ImageGallery/Pods/RxCocoa/RxCocoa/Common/Binder.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Common/ControlTarget.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Common/DelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Common/DelegateProxyType.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Common/KeyPathBinder.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Common/NSLayoutConstraint+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Common/Observable+Bind.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Common/RxCocoaObjCRuntimeError+Extensions.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Common/RxTarget.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Common/SectionedViewDataSourceType.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Common/TextInput.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Deprecated.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Foundation/KVORepresentable+CoreGraphics.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Foundation/KVORepresentable+Swift.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Foundation/KVORepresentable.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Foundation/Logging.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Foundation/NotificationCenter+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Foundation/NSObject+Rx+KVORepresentable.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Foundation/NSObject+Rx+RawRepresentable.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Foundation/NSObject+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Foundation/URLSession+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/DataSources/RxCollectionViewReactiveArrayDataSource.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/DataSources/RxPickerViewAdapter.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/DataSources/RxTableViewReactiveArrayDataSource.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Events/ItemEvents.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/NSTextStorage+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Protocols/RxCollectionViewDataSourceType.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Protocols/RxPickerViewDataSourceType.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Protocols/RxTableViewDataSourceType.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxCollectionViewDataSourcePrefetchingProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxCollectionViewDataSourceProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxCollectionViewDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxNavigationControllerDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxPickerViewDataSourceProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxPickerViewDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxScrollViewDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxSearchBarDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxSearchControllerDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTabBarControllerDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTabBarDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTableViewDataSourcePrefetchingProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTableViewDataSourceProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTableViewDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTextStorageDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTextViewDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxWKNavigationDelegateProxy.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIActivityIndicatorView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIAlertAction+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIApplication+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIBarButtonItem+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIButton+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UICollectionView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIControl+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIDatePicker+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIGestureRecognizer+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIImageView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UILabel+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UINavigationController+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UINavigationItem+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIPageControl+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIPickerView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIProgressView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIRefreshControl+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIScrollView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UISearchBar+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UISearchController+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UISegmentedControl+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UISlider+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIStepper+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UISwitch+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UITabBar+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UITabBarController+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UITabBarItem+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UITableView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UITextField+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UITextView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/UIViewController+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/iOS/WKWebView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/macOS/NSButton+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/macOS/NSControl+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/macOS/NSImageView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/macOS/NSSlider+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/macOS/NSTextField+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/macOS/NSTextView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/macOS/NSView+Rx.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Runtime/_RX.m
+ImageGallery/Pods/RxCocoa/RxCocoa/Runtime/_RXDelegateProxy.m
+ImageGallery/Pods/RxCocoa/RxCocoa/Runtime/_RXKVOObserver.m
+ImageGallery/Pods/RxCocoa/RxCocoa/Runtime/_RXObjCRuntime.m
+ImageGallery/Pods/RxCocoa/RxCocoa/Runtime/include/_RX.h
+ImageGallery/Pods/RxCocoa/RxCocoa/Runtime/include/_RXDelegateProxy.h
+ImageGallery/Pods/RxCocoa/RxCocoa/Runtime/include/_RXKVOObserver.h
+ImageGallery/Pods/RxCocoa/RxCocoa/Runtime/include/_RXObjCRuntime.h
+ImageGallery/Pods/RxCocoa/RxCocoa/Runtime/include/RxCocoaRuntime.h
+ImageGallery/Pods/RxCocoa/RxCocoa/RxCocoa.h
+ImageGallery/Pods/RxCocoa/RxCocoa/RxCocoa.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/ControlEvent.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/ControlProperty.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/Driver/BehaviorRelay+Driver.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/Driver/ControlEvent+Driver.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/Driver/ControlProperty+Driver.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/Driver/Driver+Subscription.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/Driver/Driver.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/Driver/ObservableConvertibleType+Driver.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/SharedSequence/ObservableConvertibleType+SharedSequence.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/SharedSequence/SchedulerType+SharedSequence.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/SharedSequence/SharedSequence+Operators+arity.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/SharedSequence/SharedSequence+Operators.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/SharedSequence/SharedSequence.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/Signal/ControlEvent+Signal.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/Signal/ObservableConvertibleType+Signal.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/Signal/PublishRelay+Signal.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/Signal/Signal+Subscription.swift
+ImageGallery/Pods/RxCocoa/RxCocoa/Traits/Signal/Signal.swift
+ImageGallery/Pods/RxRelay/LICENSE.md
+ImageGallery/Pods/RxRelay/README.md
+ImageGallery/Pods/RxRelay/RxRelay/BehaviorRelay.swift
+ImageGallery/Pods/RxRelay/RxRelay/Observable+Bind.swift
+ImageGallery/Pods/RxRelay/RxRelay/PublishRelay.swift
+ImageGallery/Pods/RxRelay/RxRelay/Utils.swift
+ImageGallery/Pods/RxSwift/LICENSE.md
+ImageGallery/Pods/RxSwift/Platform/AtomicInt.swift
+ImageGallery/Pods/RxSwift/Platform/DataStructures/Bag.swift
+ImageGallery/Pods/RxSwift/Platform/DataStructures/InfiniteSequence.swift
+ImageGallery/Pods/RxSwift/Platform/DataStructures/PriorityQueue.swift
+ImageGallery/Pods/RxSwift/Platform/DataStructures/Queue.swift
+ImageGallery/Pods/RxSwift/Platform/DispatchQueue+Extensions.swift
+ImageGallery/Pods/RxSwift/Platform/Platform.Darwin.swift
+ImageGallery/Pods/RxSwift/Platform/Platform.Linux.swift
+ImageGallery/Pods/RxSwift/Platform/RecursiveLock.swift
+ImageGallery/Pods/RxSwift/README.md
+ImageGallery/Pods/RxSwift/RxSwift/AnyObserver.swift
+ImageGallery/Pods/RxSwift/RxSwift/Cancelable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Concurrency/AsyncLock.swift
+ImageGallery/Pods/RxSwift/RxSwift/Concurrency/Lock.swift
+ImageGallery/Pods/RxSwift/RxSwift/Concurrency/LockOwnerType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Concurrency/SynchronizedDisposeType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Concurrency/SynchronizedOnType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Concurrency/SynchronizedUnsubscribeType.swift
+ImageGallery/Pods/RxSwift/RxSwift/ConnectableObservableType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Date+Dispatch.swift
+ImageGallery/Pods/RxSwift/RxSwift/Deprecated.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/AnonymousDisposable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/BinaryDisposable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/BooleanDisposable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/CompositeDisposable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/Disposables.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/DisposeBag.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/DisposeBase.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/NopDisposable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/RefCountDisposable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/ScheduledDisposable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/SerialDisposable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/SingleAssignmentDisposable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Disposables/SubscriptionDisposable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Errors.swift
+ImageGallery/Pods/RxSwift/RxSwift/Event.swift
+ImageGallery/Pods/RxSwift/RxSwift/Extensions/Bag+Rx.swift
+ImageGallery/Pods/RxSwift/RxSwift/GroupedObservable.swift
+ImageGallery/Pods/RxSwift/RxSwift/ImmediateSchedulerType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observable.swift
+ImageGallery/Pods/RxSwift/RxSwift/ObservableConvertibleType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/AddRef.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Amb.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/AsMaybe.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/AsSingle.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Buffer.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Catch.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/CombineLatest+arity.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/CombineLatest+Collection.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/CombineLatest.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/CompactMap.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Concat.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Create.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Debounce.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Debug.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/DefaultIfEmpty.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Deferred.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Delay.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/DelaySubscription.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Dematerialize.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/DistinctUntilChanged.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Do.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/ElementAt.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Empty.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Enumerated.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Error.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Filter.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/First.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Generate.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/GroupBy.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Just.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Map.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Materialize.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Merge.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Multicast.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Never.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/ObserveOn.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Optional.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Producer.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Range.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Reduce.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Repeat.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/RetryWhen.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Sample.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Scan.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Sequence.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/ShareReplayScope.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/SingleAsync.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Sink.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Skip.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/SkipUntil.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/SkipWhile.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/StartWith.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/SubscribeOn.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Switch.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/SwitchIfEmpty.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Take.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/TakeLast.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/TakeUntil.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/TakeWhile.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Throttle.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Timeout.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Timer.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/ToArray.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Using.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Window.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/WithLatestFrom.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Zip+arity.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Zip+Collection.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observables/Zip.swift
+ImageGallery/Pods/RxSwift/RxSwift/ObservableType+Extensions.swift
+ImageGallery/Pods/RxSwift/RxSwift/ObservableType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observers/AnonymousObserver.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observers/ObserverBase.swift
+ImageGallery/Pods/RxSwift/RxSwift/Observers/TailRecursiveSink.swift
+ImageGallery/Pods/RxSwift/RxSwift/ObserverType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Reactive.swift
+ImageGallery/Pods/RxSwift/RxSwift/Rx.swift
+ImageGallery/Pods/RxSwift/RxSwift/RxMutableBox.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/ConcurrentDispatchQueueScheduler.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/ConcurrentMainScheduler.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/CurrentThreadScheduler.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/HistoricalScheduler.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/HistoricalSchedulerTimeConverter.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/Internal/DispatchQueueConfiguration.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/Internal/InvocableScheduledItem.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/Internal/InvocableType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/Internal/ScheduledItem.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/Internal/ScheduledItemType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/MainScheduler.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/OperationQueueScheduler.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/RecursiveScheduler.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/SchedulerServices+Emulation.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/SerialDispatchQueueScheduler.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/VirtualTimeConverterType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Schedulers/VirtualTimeScheduler.swift
+ImageGallery/Pods/RxSwift/RxSwift/SchedulerType.swift
+ImageGallery/Pods/RxSwift/RxSwift/Subjects/AsyncSubject.swift
+ImageGallery/Pods/RxSwift/RxSwift/Subjects/BehaviorSubject.swift
+ImageGallery/Pods/RxSwift/RxSwift/Subjects/PublishSubject.swift
+ImageGallery/Pods/RxSwift/RxSwift/Subjects/ReplaySubject.swift
+ImageGallery/Pods/RxSwift/RxSwift/Subjects/SubjectType.swift
+ImageGallery/Pods/RxSwift/RxSwift/SwiftSupport/SwiftSupport.swift
+ImageGallery/Pods/RxSwift/RxSwift/Traits/Completable+AndThen.swift
+ImageGallery/Pods/RxSwift/RxSwift/Traits/Completable.swift
+ImageGallery/Pods/RxSwift/RxSwift/Traits/Maybe.swift
+ImageGallery/Pods/RxSwift/RxSwift/Traits/ObservableType+PrimitiveSequence.swift
+ImageGallery/Pods/RxSwift/RxSwift/Traits/PrimitiveSequence+Zip+arity.swift
+ImageGallery/Pods/RxSwift/RxSwift/Traits/PrimitiveSequence.swift
+ImageGallery/Pods/RxSwift/RxSwift/Traits/Single.swift
+ImageGallery/Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+ImageGallery/Pods/Target Support Files/Alamofire/Alamofire-Info.plist
+ImageGallery/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+ImageGallery/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+ImageGallery/Pods/Target Support Files/Alamofire/Alamofire.debug.xcconfig
+ImageGallery/Pods/Target Support Files/Alamofire/Alamofire.modulemap
+ImageGallery/Pods/Target Support Files/Alamofire/Alamofire.release.xcconfig
+ImageGallery/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-dummy.m
+ImageGallery/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist
+ImageGallery/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch
+ImageGallery/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-umbrella.h
+ImageGallery/Pods/Target Support Files/MBProgressHUD/MBProgressHUD.debug.xcconfig
+ImageGallery/Pods/Target Support Files/MBProgressHUD/MBProgressHUD.modulemap
+ImageGallery/Pods/Target Support Files/MBProgressHUD/MBProgressHUD.release.xcconfig
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests-acknowledgements.markdown
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests-acknowledgements.plist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests-dummy.m
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests-frameworks-Debug-input-files.xcfilelist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests-frameworks-Debug-output-files.xcfilelist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests-frameworks-Release-input-files.xcfilelist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests-frameworks-Release-output-files.xcfilelist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests-frameworks.sh
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests-Info.plist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests-umbrella.h
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests.debug.xcconfig
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests.modulemap
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery-ImageGalleryUITests/Pods-ImageGallery-ImageGalleryUITests.release.xcconfig
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery-acknowledgements.markdown
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery-acknowledgements.plist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery-dummy.m
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery-frameworks-Debug-input-files.xcfilelist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery-frameworks-Debug-output-files.xcfilelist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery-frameworks-Release-input-files.xcfilelist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery-frameworks-Release-output-files.xcfilelist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery-frameworks.sh
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery-Info.plist
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery-umbrella.h
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery.debug.xcconfig
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery.modulemap
+ImageGallery/Pods/Target Support Files/Pods-ImageGallery/Pods-ImageGallery.release.xcconfig
+ImageGallery/Pods/Target Support Files/Pods-ImageGalleryTests/Pods-ImageGalleryTests-acknowledgements.markdown
+ImageGallery/Pods/Target Support Files/Pods-ImageGalleryTests/Pods-ImageGalleryTests-acknowledgements.plist
+ImageGallery/Pods/Target Support Files/Pods-ImageGalleryTests/Pods-ImageGalleryTests-dummy.m
+ImageGallery/Pods/Target Support Files/Pods-ImageGalleryTests/Pods-ImageGalleryTests-Info.plist
+ImageGallery/Pods/Target Support Files/Pods-ImageGalleryTests/Pods-ImageGalleryTests-umbrella.h
+ImageGallery/Pods/Target Support Files/Pods-ImageGalleryTests/Pods-ImageGalleryTests.debug.xcconfig
+ImageGallery/Pods/Target Support Files/Pods-ImageGalleryTests/Pods-ImageGalleryTests.modulemap
+ImageGallery/Pods/Target Support Files/Pods-ImageGalleryTests/Pods-ImageGalleryTests.release.xcconfig
+ImageGallery/Pods/Target Support Files/RxCocoa/RxCocoa-dummy.m
+ImageGallery/Pods/Target Support Files/RxCocoa/RxCocoa-Info.plist
+ImageGallery/Pods/Target Support Files/RxCocoa/RxCocoa-prefix.pch
+ImageGallery/Pods/Target Support Files/RxCocoa/RxCocoa-umbrella.h
+ImageGallery/Pods/Target Support Files/RxCocoa/RxCocoa.debug.xcconfig
+ImageGallery/Pods/Target Support Files/RxCocoa/RxCocoa.modulemap
+ImageGallery/Pods/Target Support Files/RxCocoa/RxCocoa.release.xcconfig
+ImageGallery/Pods/Target Support Files/RxRelay/RxRelay-dummy.m
+ImageGallery/Pods/Target Support Files/RxRelay/RxRelay-Info.plist
+ImageGallery/Pods/Target Support Files/RxRelay/RxRelay-prefix.pch
+ImageGallery/Pods/Target Support Files/RxRelay/RxRelay-umbrella.h
+ImageGallery/Pods/Target Support Files/RxRelay/RxRelay.debug.xcconfig
+ImageGallery/Pods/Target Support Files/RxRelay/RxRelay.modulemap
+ImageGallery/Pods/Target Support Files/RxRelay/RxRelay.release.xcconfig
+ImageGallery/Pods/Target Support Files/RxSwift/RxSwift-dummy.m
+ImageGallery/Pods/Target Support Files/RxSwift/RxSwift-Info.plist
+ImageGallery/Pods/Target Support Files/RxSwift/RxSwift-prefix.pch
+ImageGallery/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h
+ImageGallery/Pods/Target Support Files/RxSwift/RxSwift.debug.xcconfig
+ImageGallery/Pods/Target Support Files/RxSwift/RxSwift.modulemap
+ImageGallery/Pods/Target Support Files/RxSwift/RxSwift.release.xcconfig
+*.lock

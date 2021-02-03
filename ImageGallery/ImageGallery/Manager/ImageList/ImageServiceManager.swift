@@ -74,7 +74,6 @@ class ImageServiceManager {
                     
                     switch response {
                     case .error(let error) :
-                        print("Error Searching: \(error)")
                         observer.onError(Error.failed)
                     case .success(let data):
                         

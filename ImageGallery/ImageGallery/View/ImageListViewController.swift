@@ -131,7 +131,12 @@ private typealias CollectionViewDelegate = ImageListViewController
 extension CollectionViewDelegate{
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("You selected cell #\(indexPath.item)!")
+        if isFilterring {
+            self.selectedImage = self.filteredList[indexPath.row]
+        }else{
+            self.selectedImage = self.images[indexPath.row]
+        }
+        print(selectedImage?.imageID ?? "")
     }
 }
 

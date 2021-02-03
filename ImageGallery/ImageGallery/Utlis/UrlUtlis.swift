@@ -18,9 +18,7 @@ class UrlUtlis {
     }
     
     static func getImageURL(size: String, image:Image) -> URL? {
-        if let url =  URL(string: "https://farm\(image.farm).staticflickr.com/\(image.server)/\(image.imageID)_\(image.secret)_\(size).jpg") { print(url)
-            return url 
-        }
+        if let url =  URL(string: "https://farm\(image.farm).staticflickr.com/\(image.server)/\(image.imageID)_\(image.secret)_\(size).jpg") { return url }
         return nil
       }
     

@@ -11,6 +11,10 @@ import UIKit
 extension UIImage {
     var data: Data? {
         if let data = self.jpegData(compressionQuality: 1.0) {
+            if data.count == 0{
+                let pngData = self.pngData()
+                return pngData
+            }
             return data
         } else {
             return nil

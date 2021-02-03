@@ -20,14 +20,19 @@ class ImageListViewModel {
     
     func getImages(for searchText: String) {
         
-        ImageListManager().getImageList(searchText: searchText).subscribe { (event) in
+        if GeneralUtlis.isNetworkConnectionAvailable() {
             
-            if let images = event.element {
-                self.searchOnlineImageList.accept(images)
-            }else{
-                self.searchOnlineFailed.accept(true)
-            }
-        }.disposed(by: self.disposeBag)
+            ImageListManager().getImageList(searchText: searchText).subscribe { (event) in
+                
+                if let images = event.element {
+                    self.searchOnlineImageList.accept(images)
+                }else{
+                    self.searchOnlineFailed.accept(true)
+                }
+            }.disposed(by: self.disposeBag)
+        }else{
+            fetchAllImageFromLocalDB()
+        }
     }
     
     func fetchAllImageFromLocalDB() {

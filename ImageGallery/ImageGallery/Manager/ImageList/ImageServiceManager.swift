@@ -37,9 +37,9 @@ class ImageServiceManager {
                             
                             let images: [Image] = photo.compactMap { image in
 
-                                guard let imageID = image["id"] as? String, let farm = image["farm"] as? Int , let server = image["server"] as? String , let secret = image["secret"] as? String else { return nil }
+                                guard let imageID = image["id"] as? String,let title = image["title"] as? String, let farm = image["farm"] as? Int , let server = image["server"] as? String , let secret = image["secret"] as? String else { return nil }
                                 
-                                var image = Image(imageID: imageID,farm: farm, server: server, secret: secret)
+                                var image = Image(imageID: imageID, title: title,farm: farm, server: server, secret: secret)
                                 guard let url = UrlUtlis.getImageURL(size: "m", image: image), let imageData = try? Data(contentsOf: url as URL) else { return nil }
                                 
                                 if let largeImage = UIImage(data: imageData) {

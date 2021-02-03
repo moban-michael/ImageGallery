@@ -136,7 +136,19 @@ extension CollectionViewDelegate{
         }else{
             self.selectedImage = self.images[indexPath.row]
         }
-        print(selectedImage?.imageID ?? "")
+        performSegue(withIdentifier: "Load Detail", sender: nil)
+    }
+}
+
+private typealias prepareForSegue = ImageListViewController
+extension prepareForSegue{
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "Load Detail") {
+            if let detailViewController = segue.destination as? ImageDetailViewController {
+                detailViewController.image = self.selectedImage
+            }
+        }
     }
 }
 

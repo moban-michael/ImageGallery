@@ -21,7 +21,7 @@ class ImageListManager {
             ImageServiceManager().searchImage(for: searchText).asObservable().subscribe(onNext: { (searchResult) in
                 
                 //Store into DB
-                self.imageListDataManager.saveImagesIntoDB(images: searchResult.results).asObservable().subscribe { (event) in
+                self.imageListDataManager.saveImagesIntoDB(text: searchText, images: searchResult.results).asObservable().subscribe { (event) in
                     if event.element != nil{
                         observer.onNext(searchResult.results)
                     }

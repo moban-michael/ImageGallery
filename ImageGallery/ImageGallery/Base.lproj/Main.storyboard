@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,10 +53,57 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="bP5-ag-7hg"/>
+                    <connections>
+                        <segue destination="iMQ-wq-Dc9" kind="show" identifier="Load Detail" id="0FX-yc-r3H"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuh-fF-5dp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2348" y="773"/>
+            <point key="canvasLocation" x="1349" y="577"/>
+        </scene>
+        <!--Image Detail View Controller-->
+        <scene sceneID="6NL-7d-SVf">
+            <objects>
+                <viewController id="iMQ-wq-Dc9" customClass="ImageDetailViewController" customModule="ImageGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jTh-gG-efO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ejz-FZ-sE7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx1-e1-Kwa">
+                                <rect key="frame" x="0.0" y="831" width="414" height="65"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="IFM-Hc-q57"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hhS-fH-b0N"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ejz-FZ-sE7" firstAttribute="trailing" secondItem="hhS-fH-b0N" secondAttribute="trailing" id="CdD-Qd-ESl"/>
+                            <constraint firstAttribute="bottom" secondItem="kx1-e1-Kwa" secondAttribute="bottom" id="HCy-KU-jm8"/>
+                            <constraint firstItem="hhS-fH-b0N" firstAttribute="trailing" secondItem="kx1-e1-Kwa" secondAttribute="trailing" id="e4S-ka-1Kf"/>
+                            <constraint firstItem="Ejz-FZ-sE7" firstAttribute="top" secondItem="hhS-fH-b0N" secondAttribute="top" id="kbU-fp-qih"/>
+                            <constraint firstItem="kx1-e1-Kwa" firstAttribute="leading" secondItem="hhS-fH-b0N" secondAttribute="leading" id="pxY-FT-VAM"/>
+                            <constraint firstAttribute="bottom" secondItem="Ejz-FZ-sE7" secondAttribute="bottom" id="rhe-GV-0Sf"/>
+                            <constraint firstItem="Ejz-FZ-sE7" firstAttribute="leading" secondItem="hhS-fH-b0N" secondAttribute="leading" id="vzP-HD-yQz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gRz-Ds-tEG"/>
+                    <connections>
+                        <outlet property="imageView" destination="Ejz-FZ-sE7" id="7h0-If-8ZQ"/>
+                        <outlet property="label" destination="kx1-e1-Kwa" id="vfG-Bu-lrn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuq-dj-OV4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2150.7246376811595" y="576.5625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o6Z-ds-FjY">
@@ -73,7 +121,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRh-wg-uxM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="773"/>
+            <point key="canvasLocation" x="522" y="577"/>
         </scene>
     </scenes>
     <resources>

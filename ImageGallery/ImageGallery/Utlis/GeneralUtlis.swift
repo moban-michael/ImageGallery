@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 func onMainQueue(_ closure: @escaping () -> Void) {
     DispatchQueue.main.async {
@@ -15,4 +16,12 @@ func onMainQueue(_ closure: @escaping () -> Void) {
 
 class GeneralUtlis {
     
+    static func isNetworkConnectionAvailable() -> Bool {
+        
+        if (NetworkReachabilityManager()?.isReachable)!{
+            return true
+        }else{
+            return false
+        }
+    }
 }

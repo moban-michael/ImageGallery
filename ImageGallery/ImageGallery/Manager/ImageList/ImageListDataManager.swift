@@ -13,13 +13,12 @@ class ImageListDataManager {
     
     private let disposeBag = DisposeBag()
     
-    func saveImagesIntoDB(images:[Image]) -> Observable<(Bool)> {
+    func saveImagesIntoDB(text:String, images:[Image]) -> Observable<(Bool)> {
         
         return Observable<(Bool)>.create { observer in
             
             // TODO: store in Database
             observer.onNext(true)
-            
             return Disposables.create {
                 
             }
@@ -31,7 +30,10 @@ class ImageListDataManager {
         return Observable<(Image)>.create { observer in
             
             // TODO: fetch from Database
-            observer.onNext(Image.init(imageID: "", farm: 1, server: "", secret: ""))
+            var image1 = Image.init(imageID: "1", title: "tempImage", farm: 1, server: "", secret: "")
+            let image = UIImage.init(named: "PlaceHolder")?.data
+            image1.mainImage = image
+            observer.onNext(image1)
             
             return Disposables.create {
                 
@@ -45,7 +47,9 @@ class ImageListDataManager {
             
             // TODO: fetch from Database
             //Test Data
-            let image1 = Image.init(imageID: "1", farm: 1, server: "", secret: "")
+            var image1 = Image.init(imageID: "1", title: "tempImage", farm: 1, server: "", secret: "")
+            let image = UIImage.init(named: "PlaceHolder")
+            image1.mainImage = image?.data
             observer.onNext([image1])
             return Disposables.create {
                 

@@ -484,3 +484,14 @@ ImageGallery/Pods/Target Support Files/RxSwift/RxSwift.debug.xcconfig
 ImageGallery/Pods/Target Support Files/RxSwift/RxSwift.modulemap
 ImageGallery/Pods/Target Support Files/RxSwift/RxSwift.release.xcconfig
 *.lock
+ImageGallery/Pods/KRLCollectionViewGridLayout/Classes/KRLCollectionViewGridLayout.h
+ImageGallery/Pods/KRLCollectionViewGridLayout/Classes/KRLCollectionViewGridLayout.m
+ImageGallery/Pods/KRLCollectionViewGridLayout/LICENSE
+ImageGallery/Pods/KRLCollectionViewGridLayout/README.md
+ImageGallery/Pods/Target Support Files/KRLCollectionViewGridLayout/KRLCollectionViewGridLayout-dummy.m
+ImageGallery/Pods/Target Support Files/KRLCollectionViewGridLayout/KRLCollectionViewGridLayout-Info.plist
+ImageGallery/Pods/Target Support Files/KRLCollectionViewGridLayout/KRLCollectionViewGridLayout-prefix.pch
+ImageGallery/Pods/Target Support Files/KRLCollectionViewGridLayout/KRLCollectionViewGridLayout-umbrella.h
+ImageGallery/Pods/Target Support Files/KRLCollectionViewGridLayout/KRLCollectionViewGridLayout.debug.xcconfig
+ImageGallery/Pods/Target Support Files/KRLCollectionViewGridLayout/KRLCollectionViewGridLayout.modulemap
+ImageGallery/Pods/Target Support Files/KRLCollectionViewGridLayout/KRLCollectionViewGridLayout.release.xcconfig

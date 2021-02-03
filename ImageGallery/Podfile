@@ -9,7 +9,7 @@ target 'ImageGallery' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'MBProgressHUD'
-  pod 'Alamofire'
+  pod "KRLCollectionViewGridLayout", "~> 1.0.0"
 
   target 'ImageGalleryTests' do
     inherit! :search_paths

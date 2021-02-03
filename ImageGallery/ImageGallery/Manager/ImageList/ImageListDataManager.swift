@@ -46,9 +46,7 @@ class ImageListDataManager {
             // TODO: fetch from Database
             //Test Data
             let image1 = Image.init(imageID: "1", farm: 1, server: "", secret: "")
-            let image2 = Image.init(imageID: "2", farm: 1, server: "", secret: "")
-            observer.onNext([image1,image2])
-            
+            observer.onNext([image1])
             return Disposables.create {
                 
             }

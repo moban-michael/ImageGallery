@@ -16,7 +16,7 @@ class Constant {
     struct Service {
         
         static let searchUrlPrefix :String = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key="
-        static let searchUrlSuffix :String = "&per_page=1&format=json&nojsoncallback=1"
+        static let searchUrlSuffix :String = "&per_page=10&format=json&nojsoncallback=1"
         static let getSizes:String         = "https://www.flickr.com/services/api/flickr.photos.getSizes.html"
 
     }

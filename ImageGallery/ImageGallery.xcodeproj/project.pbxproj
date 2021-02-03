@@ -18,6 +18,9 @@
 		81AB005425C8CA8A00697076 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AB005325C8CA8A00697076 /* SearchResult.swift */; };
 		81AB005D25C8CB8200697076 /* ImageServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AB005C25C8CB8200697076 /* ImageServiceManager.swift */; };
 		81AB007625C8D76F00697076 /* UrlUtlis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AB007525C8D76F00697076 /* UrlUtlis.swift */; };
+		81C7D44025CAB51F0079356A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7D43F25CAB51F0079356A /* Response.swift */; };
+		81C7D44525CAC3550079356A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7D44425CAC3550079356A /* UIViewExtensions.swift */; };
+		81C7D44A25CAD4650079356A /* GeneralUtlis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7D44925CAD4650079356A /* GeneralUtlis.swift */; };
 		81EABC4125C7459A00EA1A94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EABC4025C7459A00EA1A94 /* AppDelegate.swift */; };
 		81EABC4325C7459A00EA1A94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EABC4225C7459A00EA1A94 /* SceneDelegate.swift */; };
 		81EABC4825C7459A00EA1A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81EABC4625C7459A00EA1A94 /* Main.storyboard */; };
@@ -64,6 +67,9 @@
 		81AB005325C8CA8A00697076 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		81AB005C25C8CB8200697076 /* ImageServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceManager.swift; sourceTree = "<group>"; };
 		81AB007525C8D76F00697076 /* UrlUtlis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlUtlis.swift; sourceTree = "<group>"; };
+		81C7D43F25CAB51F0079356A /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		81C7D44425CAC3550079356A /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		81C7D44925CAD4650079356A /* GeneralUtlis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralUtlis.swift; sourceTree = "<group>"; };
 		81EABC3D25C7459A00EA1A94 /* ImageGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EABC4025C7459A00EA1A94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81EABC4225C7459A00EA1A94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				81AB007525C8D76F00697076 /* UrlUtlis.swift */,
+				81C7D44925CAD4650079356A /* GeneralUtlis.swift */,
 			);
 			path = Utlis;
 			sourceTree = "<group>";
@@ -217,6 +224,7 @@
 				81EABC9625C7480A00EA1A94 /* UIViewControllerExtensions.swift */,
 				815FCDE525CA0F6500B6A8D3 /* UIImageExtensions.swift */,
 				815FCDEA25CA0FBB00B6A8D3 /* DataExtensions.swift */,
+				81C7D44425CAC3550079356A /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -243,6 +251,7 @@
 			children = (
 				81EABCB925C74A6E00EA1A94 /* Image.swift */,
 				81AB005325C8CA8A00697076 /* SearchResult.swift */,
+				81C7D43F25CAB51F0079356A /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -528,6 +537,7 @@
 				81AB005D25C8CB8200697076 /* ImageServiceManager.swift in Sources */,
 				815FCDFC25CA1F6A00B6A8D3 /* ImageListDataManager.swift in Sources */,
 				81EABCBA25C74A6E00EA1A94 /* Image.swift in Sources */,
+				81C7D44025CAB51F0079356A /* Response.swift in Sources */,
 				81EABCB225C74A1D00EA1A94 /* ImageListViewController.swift in Sources */,
 				81EABC4125C7459A00EA1A94 /* AppDelegate.swift in Sources */,
 				815FCDE625CA0F6500B6A8D3 /* UIImageExtensions.swift in Sources */,
@@ -537,9 +547,11 @@
 				815FCDF025CA122800B6A8D3 /* GeneralServiceManager.swift in Sources */,
 				81FD126E25C7681400AE3BEC /* ImageCell.swift in Sources */,
 				815FCE0425CA246400B6A8D3 /* ImageListManager.swift in Sources */,
+				81C7D44A25CAD4650079356A /* GeneralUtlis.swift in Sources */,
 				81AB005425C8CA8A00697076 /* SearchResult.swift in Sources */,
 				815FCDEB25CA0FBB00B6A8D3 /* DataExtensions.swift in Sources */,
 				81AB007625C8D76F00697076 /* UrlUtlis.swift in Sources */,
+				81C7D44525CAC3550079356A /* UIViewExtensions.swift in Sources */,
 				81EABC8E25C7471F00EA1A94 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

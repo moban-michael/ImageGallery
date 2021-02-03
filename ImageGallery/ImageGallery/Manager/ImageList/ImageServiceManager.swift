@@ -20,43 +20,42 @@ class ImageServiceManager {
             
             if let url = UrlUtlis.getSearchURL(for: searchText){
                 
-                self.generalServiceManager.callWebService(url: url).asObservable().subscribe { (event) in
-                    if let data = event.element{
-                        
-                        do {
+                self.generalServiceManager.callWebService(url: url) { response in
+                    
+                    do {
+                        switch response {
+                        case .error(let error) :
+                            print("Server Error response: \(error)")
+                            observer.onError(Error.failed)
+                        case .success(let data):
+                            
                             let json = try JSONSerialization.jsonObject(with: data) as? [String: AnyObject]
                             guard let photos = json!["photos"] as? [String: AnyObject], let photo = photos["photo"] as? [[String: AnyObject]] else {
-                                    observer.onError(Error.parseError)
+                                observer.onError(Error.parseError)
                                 return
                             }
-                            let images: [Image] = photos.compactMap { image in
-                                //TODO: Check 
-                                //guard let imageID = image["id"] as? String, let farm = image["farm"] as? Int , let server = image["server"] as? String , let secret = image["secret"] as? String else { return nil }
+                            
+                            let images: [Image] = photo.compactMap { image in
+
+                                guard let imageID = image["id"] as? String, let farm = image["farm"] as? Int , let server = image["server"] as? String , let secret = image["secret"] as? String else { return nil }
                                 
-                                //var image = Image(imageID: imageID,farm: farm, server: server, secret: secret)
-                                var image = Image(imageID: "", farm: 2, server: "", secret: "")
+                                var image = Image(imageID: imageID,farm: farm, server: server, secret: secret)
                                 guard let url = UrlUtlis.getImageURL(size: "m", image: image), let imageData = try? Data(contentsOf: url as URL) else { return nil }
                                 
                                 if let largeImage = UIImage(data: imageData) {
-                                    image.thumbnail = largeImage.data
+                                    image.mainImage = largeImage.data
                                     return image
                                 } else {
                                     return nil
                                 }
                             }
-                            
                             let searchResults = SearchResult(searchText: searchText, results: images)
-                                observer.onNext(searchResults)
-                        } catch  {
-                            observer.onError(Error.parseError)
+                            observer.onNext(searchResults)
                         }
-                    }else{
-                        observer.onError(Error.failed)
+                    } catch  {
+                        observer.onError(Error.parseError)
                     }
-                }.disposed(by: self.disposeBag)
-                
-            } else {
-                observer.onError(Error.invalidUrl)
+                }
             }
             return Disposables.create {
                 
@@ -71,16 +70,22 @@ class ImageServiceManager {
             
             if let imageUrl = UrlUtlis.getImageURL(size: "b", image: image){
                 
-                self.generalServiceManager.callWebService(url: imageUrl).asObservable().subscribe { (event) in
-                    if let data = event.element{
+                self.generalServiceManager.callWebService(url: imageUrl){ response in
+                    
+                    switch response {
+                    case .error(let error) :
+                        print("Error Searching: \(error)")
+                        observer.onError(Error.failed)
+                    case .success(let data):
+                        
                         var largeImage = image
                         largeImage.mainImage = UIImage(data: data)?.data
-                            observer.onNext(largeImage)
+                        observer.onNext(largeImage)
                     }
-                }.disposed(by: self.disposeBag)
+                }
                 
             } else {
-                    observer.onError(Error.invalidUrl)
+                observer.onError(Error.invalidUrl)
             }
             return Disposables.create {
                 

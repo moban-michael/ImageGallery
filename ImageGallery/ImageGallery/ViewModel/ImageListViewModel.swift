@@ -13,6 +13,7 @@ class ImageListViewModel {
     
     var offlineImageList            = PublishRelay<([Image])>()
     var searchOnlineImageList       = PublishRelay<([Image])>()
+    var searchOnlineFailed          = PublishRelay<(Bool)>()
     private let disposeBag          = DisposeBag()
     private let imageListManager    = ImageListManager()
     
@@ -23,6 +24,8 @@ class ImageListViewModel {
             
             if let images = event.element {
                 self.searchOnlineImageList.accept(images)
+            }else{
+                self.searchOnlineFailed.accept(true)
             }
         }.disposed(by: self.disposeBag)
     }

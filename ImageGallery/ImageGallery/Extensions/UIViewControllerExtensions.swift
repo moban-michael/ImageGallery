@@ -9,12 +9,6 @@ import Foundation
 import UIKit
 import MBProgressHUD
 
-func onMainQueue(_ closure: @escaping () -> Void) {
-    DispatchQueue.main.async {
-        closure()
-    }
-}
-
 extension UIViewController {
     
     func showProgress(with title: String? = nil) {

@@ -16,7 +16,7 @@ class ImageListViewController: UICollectionViewController {
     fileprivate var filteredList        = [Image]()
     fileprivate var isFilterring        = false
     private let disposeBag              = DisposeBag()
-    let imageListViewModal              = ImageListViewModel()
+    var imageListViewModal              = ImageListViewModel()
     private let imagesPerRow: CGFloat   = 3
     var selectedImage       : Image?
     var searchController    : UISearchController!
@@ -77,18 +77,25 @@ class ImageListViewController: UICollectionViewController {
     }
     
     func getDataFromServer(for searchText:String){
-        
-        let activityIndicator = UIActivityIndicatorView(style: .large)
-        searchController.view.addSubview(activityIndicator)
-        activityIndicator.frame = searchController.view.bounds
-        activityIndicator.startAnimating()
+        imageListViewModal = ImageListViewModel()
+        //self.showProgress()
         imageListViewModal.searchOnlineImageList.asObservable().subscribe { (event) in
             if let images = event.element{
                 onMainQueue {
-                    activityIndicator.stopAnimating()
-                    activityIndicator.removeFromSuperview()
-                    self.filteredList = images
+                    //self.hideProgress()
+                    self.filteredList.insert(contentsOf: images, at: 0)
                     self.collectionView.reloadData()
+                }
+            }
+        }.disposed(by: self.disposeBag)
+        imageListViewModal.searchOnlineFailed.asObservable().subscribe { (event) in
+            if event.element != nil{
+                onMainQueue {
+                    //self.hideProgress()
+                    self.isFilterring = false
+                    self.filteredList = [Image]()
+                    self.collectionView.reloadData()
+                    self.view.showToast("Search Failed", width: 200)
                 }
             }
         }.disposed(by: self.disposeBag)
@@ -110,7 +117,7 @@ extension CollectionViewDataSource  {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! ImageCell
-        if let image = isFilterring ? (self.filteredList[indexPath.row].thumbnail?.image) : (self.images[indexPath.row].thumbnail?.image){
+        if let image = isFilterring ? (self.filteredList[indexPath.row].mainImage?.image) : (self.images[indexPath.row].thumbnail?.image){
             cell.imageView.image = image
         }else{
             cell.imageView.image = UIImage(named:"PlaceHolder")

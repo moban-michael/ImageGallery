@@ -18,19 +18,22 @@ class ImageListManager {
         
         return Observable<([Image])>.create { observer in
             
-            ImageServiceManager().searchImage(for: searchText).asObservable().subscribe { (event) in
-                if let searchResult = event.element{
-                    
-                    //Store into DB
-                    self.imageListDataManager.saveImagesIntoDB(images: searchResult.results).asObservable().subscribe { (event) in
-                        if event.element != nil{
-                            observer.onNext(searchResult.results)
-                        }
-                    }.disposed(by: self.disposeBag)
-                }else{
-                    observer.onError(Error.failed)
-                }
-            }.disposed(by: self.disposeBag)
+            ImageServiceManager().searchImage(for: searchText).asObservable().subscribe(onNext: { (searchResult) in
+                
+                //Store into DB
+                self.imageListDataManager.saveImagesIntoDB(images: searchResult.results).asObservable().subscribe { (event) in
+                    if event.element != nil{
+                        observer.onNext(searchResult.results)
+                    }
+                }.disposed(by: self.disposeBag)
+            }, onError: { (error) in
+                print(error)
+                observer.onError(Error.failed)
+            }, onCompleted: {
+                print("Completed")
+            }, onDisposed: {
+                print("Disposed")
+            }).disposed(by: self.disposeBag)
             
             return Disposables.create {
                 

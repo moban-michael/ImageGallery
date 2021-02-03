@@ -21,8 +21,6 @@ class UrlUtlis {
         if let url =  URL(string: "https://farm\(image.farm).staticflickr.com/\(image.server)/\(image.imageID)_\(image.secret)_\(size).jpg") { print(url)
             return url 
         }
-        // TODO: check
-        //https://farm6.staticflickr.com/5800/31456463045_5a0af4ddc8_q.jpg
         return nil
       }
     

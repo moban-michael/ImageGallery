@@ -68,7 +68,8 @@ class ImageListViewController: UICollectionViewController {
         imageListViewModal.offlineImageList.asObservable().subscribe { (event) in
             if let images = event.element{
                 onMainQueue {
-                    self.images = images
+                    let uniqueImages = images.uniques
+                    self.images = uniqueImages
                     self.collectionView.reloadData()
                 }
             }
@@ -83,7 +84,9 @@ class ImageListViewController: UICollectionViewController {
             if let images = event.element{
                 onMainQueue {
                     //self.hideProgress()
-                    self.filteredList.insert(contentsOf: images, at: 0)
+                    var uniqueImages = self.filteredList.uniques
+                    uniqueImages.insert(contentsOf: images.uniques, at: 0)
+                    self.filteredList = uniqueImages
                     self.collectionView.reloadData()
                 }
             }
@@ -116,8 +119,9 @@ extension CollectionViewDataSource  {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! ImageCell
-        if let image = isFilterring ? (self.filteredList[indexPath.row].mainImage?.image) : (self.images[indexPath.row].thumbnail?.image){
+        if let image = isFilterring ? (self.filteredList[indexPath.row].mainImage.image) : (self.images[indexPath.row].mainImage.image){
             cell.imageView.image = image
         }else{
             cell.imageView.image = UIImage(named:"PlaceHolder")

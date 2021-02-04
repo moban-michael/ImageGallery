@@ -27,7 +27,7 @@ class ImageDetailViewController: UIViewController {
         if let currentImage = image{
             self.title = currentImage.title
             self.label.text = currentImage.imageID
-            self.imageView.image = currentImage.mainImage?.image
+            self.imageView.image = currentImage.mainImage.image
         }
     }
     

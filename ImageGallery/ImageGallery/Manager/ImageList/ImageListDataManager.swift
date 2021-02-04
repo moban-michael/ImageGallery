@@ -8,6 +8,7 @@
 import Foundation
 import RxCocoa
 import RxSwift
+import RealmSwift
 
 class ImageListDataManager {
     
@@ -17,23 +18,34 @@ class ImageListDataManager {
         
         return Observable<(Bool)>.create { observer in
             
-            // TODO: store in Database
-            observer.onNext(true)
+            onMainQueue {
+                let realm = try! Realm()
+                try! realm.write {
+                    for image in images{
+                        realm.add(image)
+                    }
+                }
+                observer.onNext(true)
+            }
             return Disposables.create {
                 
             }
         }
     }
     
-    func fetchImageFromDB(imageID:String) -> Observable<(Image)> {
+    func performDBSearch(text:String) -> Observable<([Image])> {
         
-        return Observable<(Image)>.create { observer in
+        return Observable<([Image])>.create { observer in
             
-            // TODO: fetch from Database
-            var image1 = Image.init(imageID: "1", title: "tempImage", farm: 1, server: "", secret: "")
-            let image = UIImage.init(named: "PlaceHolder")?.data
-            image1.mainImage = image
-            observer.onNext(image1)
+            var allImages: [Image] = []
+            let predicate = NSPredicate(format: "title BEGINSWITH [c]%@", text)
+            let results = try! Realm().objects(Image.self).filter(predicate)
+            if results.count <= 0{
+                allImages.append(contentsOf: self.getTempData())
+            }else{
+                allImages.append(contentsOf: results)
+            }
+            observer.onNext(allImages)
             
             return Disposables.create {
                 
@@ -45,16 +57,27 @@ class ImageListDataManager {
         
         return Observable<([Image])>.create { observer in
             
-            // TODO: fetch from Database
-            //Test Data
-            var image1 = Image.init(imageID: "1", title: "tempImage", farm: 1, server: "", secret: "")
-            let image = UIImage.init(named: "PlaceHolder")
-            image1.mainImage = image?.data
-            observer.onNext([image1])
+            var allImages: [Image] = []
+            let results = try! Realm().objects(Image.self)
+            if results.count <= 0{
+                allImages.append(contentsOf: self.getTempData())
+            }else{
+                allImages.append(contentsOf: results)
+            }
+            observer.onNext(allImages)
+            
             return Disposables.create {
                 
             }
         }
+    }
+    
+    func getTempData() -> [Image]{
+        //Temp Data
+        let image1 = Image.init(imageID: "1", title: "tempImage", farm: 1, server: "", secret: "")
+        let image = UIImage.init(named: "PlaceHolder")
+        image1.mainImage = (image?.data)!
+        return [image1]
     }
 }
     

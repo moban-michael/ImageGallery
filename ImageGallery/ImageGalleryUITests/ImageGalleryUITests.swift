@@ -44,8 +44,10 @@ class ImageGalleryUITests: XCTestCase {
         
         let app = XCUIApplication()
         app.activate()
-        let collectionView = XCUIApplication().collectionViews.children(matching: .cell).element(boundBy: 2).children(matching: .other).element
+        let collectionViewsQuery = app.collectionViews
+        let collectionView = collectionViewsQuery.children(matching: .cell).element(boundBy: 2).children(matching: .other).element
         let searchField = app.navigationBars["Images"]/*@START_MENU_TOKEN@*/.searchFields["Search"]/*[[".staticTexts.matching(identifier: \"Images\").searchFields[\"Search\"]",".searchFields[\"Search\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        
         searchField.tap()
         searchField.typeText("kitten")
         app.typeText("\r")
@@ -53,5 +55,7 @@ class ImageGalleryUITests: XCTestCase {
         collectionView.swipeDown()
         collectionView.swipeUp()
         collectionView.swipeDown()
+        
+        collectionViewsQuery.children(matching: .cell).element(boundBy: 2).children(matching: .other).element.tap()
     }
 }

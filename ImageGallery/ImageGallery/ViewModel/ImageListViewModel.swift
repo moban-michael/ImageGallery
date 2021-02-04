@@ -31,8 +31,17 @@ class ImageListViewModel {
                 }
             }.disposed(by: self.disposeBag)
         }else{
-            fetchAllImageFromLocalDB()
+            performOfflineSearchFromLocalDB(searchText)
         }
+    }
+    
+    func performOfflineSearchFromLocalDB(_ text:String) {
+        
+        self.imageListManager.performOfflineSearchFromLocalDB(text: text).asObservable().subscribe { (event) in
+            if let images = event.element{
+                self.offlineImageList.accept(images)
+            }
+        }.disposed(by: self.disposeBag)
     }
     
     func fetchAllImageFromLocalDB() {

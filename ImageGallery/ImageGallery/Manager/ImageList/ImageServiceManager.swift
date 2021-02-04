@@ -43,7 +43,7 @@ class ImageServiceManager {
                                 guard let url = UrlUtlis.getImageURL(size: "m", image: image), let imageData = try? Data(contentsOf: url as URL) else { return nil }
                                 
                                 if let largeImage = UIImage(data: imageData) {
-                                    image.mainImage = largeImage.data
+                                    image.mainImage = largeImage.data!
                                     return image
                                 } else {
                                     return nil
@@ -78,7 +78,7 @@ class ImageServiceManager {
                     case .success(let data):
                         
                         var largeImage = image
-                        largeImage.mainImage = UIImage(data: data)?.data
+                        largeImage.mainImage = (UIImage(data: data)?.data)!
                         observer.onNext(largeImage)
                     }
                 }

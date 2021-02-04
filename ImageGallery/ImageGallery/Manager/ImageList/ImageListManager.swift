@@ -55,4 +55,19 @@ class ImageListManager {
             }
         }
     }
+    
+    func performOfflineSearchFromLocalDB(text:String) -> Observable<([Image])> {
+        
+        return Observable<([Image])>.create { observer in
+            
+            self.imageListDataManager.performDBSearch(text: text).asObservable().subscribe { (event) in
+                if let images = event.element{
+                    observer.onNext(images)
+                }
+            }.disposed(by: self.disposeBag)
+            return Disposables.create {
+                
+            }
+        }
+    }
 }

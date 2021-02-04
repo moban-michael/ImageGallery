@@ -7,24 +7,39 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
-struct Image: Codable, Equatable  {
+class Image: Object, Codable  {
     
-    var imageID     : String
-    var title       : String
-    var farm        : Int
-    var server      : String
-    var secret      : String
-    var thumbnail   : Data?
-    var mainImage   : Data?
+    @objc dynamic var imageID     : String = ""
+    @objc dynamic var title       : String = ""
+    @objc dynamic var farm        : Int = 0
+    @objc dynamic var server      : String = ""
+    @objc dynamic var secret      : String = ""
+    @objc dynamic var thumbnail   : Data  = Data()
+    @objc dynamic var mainImage   : Data  = Data()
     
-    init (imageID: String, title:String, farm: Int, server: String, secret: String) {
+    convenience init (imageID: String, title:String, farm: Int, server: String, secret: String) {
+        self.init()
         self.imageID = imageID
         self.title = title
         self.farm = farm
         self.server = server
         self.secret = secret
     }
+    
+    override func isEqual(_ object: Any?) -> Bool {
+        if let other = object as? Image {
+            return self.imageID == other.imageID
+        } else {
+            return false
+        }
+    }
+    
+    override var hash: Int {
+        return imageID.hashValue
+    }
+    
     
     static func ==(lhs: Image, rhs: Image) -> Bool {
         return lhs.imageID == rhs.imageID

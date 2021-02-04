@@ -10,6 +10,7 @@ target 'ImageGallery' do
   pod 'RxCocoa'
   pod 'MBProgressHUD'
   pod 'Alamofire'
+  pod 'RealmSwift'
   pod "KRLCollectionViewGridLayout", "~> 1.0.0"
 
   target 'ImageGalleryTests' do
